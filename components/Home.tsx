@@ -8,7 +8,7 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ onNavigate }) => {
   return (
     <section className="relative overflow-hidden">
-      <div className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-16 lg:py-20">
+      <div className="mx-auto max-w-6xl px-4 md:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           {/* LEFT: Content */}
           <div className="space-y-8">
@@ -114,18 +114,12 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
 
           {/* RIGHT: Poster */}
           <div className="relative">
-            <div className="pointer-events-none absolute -inset-4 rounded-3xl bg-accent-secondary/10 blur-2xl transition-all duration-500 lg:group-hover:bg-accent-secondary/20" />
+            <div className="pointer-events-none absolute -inset-4 transition-all duration-500 lg:group-hover:bg-accent-secondary/20" />
             <div className="relative">
-              {/* <img
-                src="https://cdn.jsdelivr.net/gh/VasudevBarjadiya/sci-pi-assets/Sci-Pi_Webpage.png"
-                alt="SCI-π Poster"
-                className="w-full max-w-[480px] rounded-2xl border border-slate-100 bg-white shadow-2xl md:rounded-3xl lg:ml-auto"
-                loading="lazy"
-              /> */}
               <img
                 src="home_poster.png"
                 alt="SCI-π Poster"
-                className="w-full max-w-[480px] rounded-2xl border border-slate-100 bg-white shadow-2xl md:rounded-3xl lg:ml-auto"
+                className="w-full max-w-[480px] shadow-xl shadow-[#b9dbfd] lg:ml-auto"
                 loading="lazy"
               />
             </div>

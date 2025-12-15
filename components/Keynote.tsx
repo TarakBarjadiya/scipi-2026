@@ -5,7 +5,7 @@ const Keynote: React.FC = () => {
     <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
       <div className="text-center max-w-2xl mx-auto space-y-3">
         <h2 className="text-4xl font-black text-accent-primary font-display">
-          Keynote Speaker
+          Keynote Speakers
         </h2>
         <p className="text-slate-500 font-medium">
           Inspiring scientific excellence and innovation.
@@ -17,11 +17,11 @@ const Keynote: React.FC = () => {
           {/* Image Container: Matches height of content on md+ screens */}
           <div className="w-full md:w-2/5 flex items-center justify-center shrink-0">
             <div className="relative w-64 md:w-full aspect-square max-w-[320px] lg:max-w-[400px]">
-              <div className="absolute -inset-4 bg-gradient-to-tr from-accent-primary to-accent-secondary rounded-full opacity-20 blur-xl"></div>
+              <div className="absolute -inset-4 rounded-full opacity-20"></div>
               <img
                 src="https://cdn.jsdelivr.net/gh/VasudevBarjadiya/sci-pi-assets/kn.jpeg"
                 alt="Dr. Sougata Ghosh"
-                className="relative w-full h-full rounded-full object-cover border-8 border-white shadow-2xl mx-auto"
+                className="relative w-full h-full rounded-full object-cover shadow-2xl mx-auto"
               />
             </div>
           </div>
@@ -33,7 +33,7 @@ const Keynote: React.FC = () => {
                 Dr. Sougata Ghosh
               </h3>
               <p className="text-accent-secondary font-bold text-xl">
-                Associate Professor, R. K. University, Rajkot
+                Associate Professor, <br /> R. K. University, Rajkot
               </p>
             </div>
 

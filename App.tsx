@@ -41,7 +41,7 @@ const App: React.FC = () => {
       case "schedule":
         return <Schedule />;
       case "registration":
-        return <Registration />;
+        return <Registration onNavigate={setActivePage} />;
       case "contact":
         return <Contact />;
       default:

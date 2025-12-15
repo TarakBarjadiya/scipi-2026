@@ -61,15 +61,24 @@ const Registration: React.FC<GuidelinesProps> = ({ onNavigate }) => {
         </div>
 
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-200 text-red-800 text-xs font-black uppercase tracking-wider">
-          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path
-              fillRule="evenodd"
-              d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <button onClick={() => onNavigate("guidelines")}>
+          <button
+            onClick={() => onNavigate("guidelines")}
+            className="inline-flex items-center gap-1 underline underline-offset-2 decoration-dotted"
+          >
             READ GUIDELINES
+            <svg
+              className="w-3.5 h-3.5"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
           </button>
         </div>
 
@@ -77,12 +86,12 @@ const Registration: React.FC<GuidelinesProps> = ({ onNavigate }) => {
           href="https://forms.gle/1B8knBJJmhetYHZV6"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-12 py-2 rounded-full bg-accent-primary text-white font-black text-base uppercase tracking-widest hover:bg-accent-secondary transition-all transform hover:-translate-y-1 shadow-2xl shadow-accent-primary/30"
+          className="inline-block px-12 py-2 rounded-full bg-accent-primary text-white font-black text-base uppercase tracking-widest hover:bg-accent-secondary transition-all shadow-2xl shadow-accent-primary/30"
         >
           Register Now
         </a>
 
-        <p className="text-slate-400 text-xs font-bold uppercase tracking-widest underline underline-offset-4 animate-underlinePulse">
+        <p className="text-slate-600 text-xs font-bold uppercase tracking-widest underline underline-offset-4 animate-underlinePulse">
           Last Date: 20 February 2026
         </p>
       </div>

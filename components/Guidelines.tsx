@@ -55,7 +55,7 @@ const Guidelines: React.FC = () => {
               <h4 className="text-lg font-bold text-accent-secondary">
                 Abstract
               </h4>
-              <p className="text-slate-600 font-medium text-sm leading-relaxed">
+              <p className="text-slate-600 font-medium text-justify text-sm leading-relaxed">
                 We invite abstract submissions for oral presentations on the
                 theme{" "}
                 <span className="font-semibold text-accent-primary">
@@ -74,7 +74,7 @@ const Guidelines: React.FC = () => {
               <h4 className="text-lg font-bold text-accent-secondary">
                 Abstract Submission Format
               </h4>
-              <ul className="space-y-2 text-sm text-slate-600 font-medium list-disc list-inside ">
+              <ul className="space-y-2 px-6 text-sm text-slate-600 font-medium list-disc">
                 <li>
                   <span className="font-bold">Font:</span> Times New Roman
                 </li>
@@ -159,7 +159,7 @@ const Guidelines: React.FC = () => {
           </div>
 
           <div className="space-y-6">
-            <ul className="space-y-3 text-slate-600 font-medium text-sm list-disc list-inside">
+            <ul className="space-y-3 px-6 text-slate-600 font-medium text-sm list-disc">
               <li>
                 Posters must be digitally designed and printed on a single page
                 only.
@@ -228,10 +228,10 @@ const Guidelines: React.FC = () => {
           </div>
 
           <div className="space-y-6">
-            <ul className="space-y-3 text-slate-600 font-medium text-sm list-disc list-inside">
+            <ul className="space-y-3 text-slate-600 font-medium text-sm list-disc px-6">
               <li>
                 Participants may use any medium such as pencil, crayons,
-                watercolours, acrylics, etc.
+                watercolors, acrylics, etc.
               </li>
               <li>
                 Evaluation will be based on creativity, relevance to the theme
