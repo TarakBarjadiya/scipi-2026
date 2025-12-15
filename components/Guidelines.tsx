@@ -57,7 +57,7 @@ const Guidelines: React.FC = () => {
               </h4>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
                 We invite abstract submissions for oral presentations on the
-                theme
+                theme{" "}
                 <span className="font-semibold text-accent-primary">
                   {" "}
                   'Emerging Trends in Science and Technology'.
@@ -108,8 +108,8 @@ const Guidelines: React.FC = () => {
           <div className="p-4 rounded-2xl border border-amber-100 bg-amber-50 text-amber-900 text-xs md:text-sm font-medium">
             <ul className="list-disc pl-5 space-y-1">
               <li>
-                Abstract must be submitted via mail on or
-                before 10th February 2026 to{" "}
+                Abstract must be submitted via mail on or before 10th February
+                2026 to{" "}
                 <a
                   href="mailto:punit.vadher@darshan.ac.in"
                   className="underline font-black break-all"

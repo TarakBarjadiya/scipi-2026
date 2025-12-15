@@ -120,8 +120,14 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
           <div className="relative">
             <div className="pointer-events-none absolute -inset-4 rounded-3xl bg-accent-secondary/10 blur-2xl transition-all duration-500 lg:group-hover:bg-accent-secondary/20" />
             <div className="relative">
+              {/* <img
+                src="https://cdn.jsdelivr.net/gh/VasudevBarjadiya/sci-pi-assets/Sci-Pi_Webpage.png"
+                alt="SCI-π Poster"
+                className="w-full max-w-[480px] rounded-2xl border border-slate-100 bg-white shadow-2xl md:rounded-3xl lg:ml-auto"
+                loading="lazy"
+              /> */}
               <img
-                src="https://cdn.jsdelivr.net/gh/VasudevBarjadiya/sci-pi-assets/poster.png"
+                src="home_poster.png"
                 alt="SCI-π Poster"
                 className="w-full max-w-[480px] rounded-2xl border border-slate-100 bg-white shadow-2xl md:rounded-3xl lg:ml-auto"
                 loading="lazy"

@@ -23,16 +23,21 @@ const Header: React.FC<HeaderProps> = ({
         <div className="flex items-center gap-5 flex-1">
           {/* DU Logo — always left */}
           <img
-            src="https://cdn.jsdelivr.net/gh/VasudevBarjadiya/sci-pi-assets/DU.svg"
+            src="du_logo.svg"
             alt="Darshan University Logo"
             className="h-10 md:h-12 w-auto object-contain transition-transform"
             loading="lazy"
           />
 
+          <span
+            className="hidden sm:block h-8 md:h-10 w-px bg-stone-400"
+            aria-hidden="true"
+          />
+
           {/* SciPi Logo — Centered on mobile due to flex-1 on parent, left-aligned on desktop */}
-          <div className="flex-1 flex justify-center lg:!justify-start">
+          <div className="flex-1 flex lg:!justify-start">
             <img
-              src="https://cdn.jsdelivr.net/gh/VasudevBarjadiya/sci-pi-assets@master/SciPi_26_nc.svg"
+              src="scipi_26.svg"
               alt="Sci-π Logo"
               className="h-10 md:h-12 w-auto object-contain transition-transform"
               loading="lazy"
@@ -49,8 +54,8 @@ const Header: React.FC<HeaderProps> = ({
               onClick={() => setActivePage(item.id)}
               className={`px-4 py-2 rounded-full text-sm font-bold transition-all duration-200 ${
                 activePage === item.id
-                  ? "text-accent-primary scale-105 underline underline-offset-6"
-                  : "text-slate-600 hover:bg-slate-100 hover:text-accent-primary"
+                  ? "text-accent-primary underline underline-offset-6"
+                  : "text-slate-600 hover:underline hover:underline-offset-6 hover:text-accent-primary"
               }`}
             >
               {item.label}

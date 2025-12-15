@@ -3,7 +3,7 @@ import React from "react";
 const Contact: React.FC = () => {
   const contacts = [
     { name: "Mr. Punit Vadher", phone: "+91 96624 43859" },
-    { name: "Dr. Priya Vithlani", phone: "+91 84603 57193" },
+    { name: "Dr. Priya Vithalani", phone: "+91 84603 57193" },
     { name: "Mr. Vasudev Barjadiya", phone: "+91 90164 27200" },
   ];
 
@@ -23,9 +23,9 @@ const Contact: React.FC = () => {
           <h3 className="text-2xl font-black text-accent-primary">
             Organizing Committee
           </h3>
-          <p className="text-slate-600 font-medium leading-relaxed">
+          <p className="text-slate-600 font-medium leading-relaxed text-justify">
             The symposium is organized by the{" "}
-            <strong>Department of Humanities and Sciences</strong> and the
+            <strong>Department of Humanities and Sciences</strong> and the{' '}
             <strong>Department of Microbiology</strong>, Darshan University,
             with support from faculty and staff members across both departments.
           </p>
