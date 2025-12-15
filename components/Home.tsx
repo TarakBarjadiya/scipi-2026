@@ -67,30 +67,26 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <button
                 onClick={() => onNavigate("registration")}
-                className="inline-flex items-center justify-center rounded-full bg-accent-primary px-8 py-3 text-xs font-black uppercase tracking-[0.22em] text-white shadow-xl shadow-accent-primary/25 transition-all duration-200 hover:-translate-y-1 hover:bg-accent-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2"
+                className="min-w-60 inline-flex items-center justify-center rounded-full bg-accent-primary px-8 py-3 text-xs font-black uppercase tracking-[0.22em] text-white shadow-xl shadow-accent-primary/25 transition-all duration-200 hover:bg-accent-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2"
               >
                 Register Now
               </button>
+
               <button
                 onClick={() => onNavigate("guidelines")}
-                className="inline-flex items-center justify-center rounded-full border-2 border-slate-200 bg-white px-8 py-3 text-xs font-black uppercase tracking-[0.22em] text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-accent-primary hover:text-accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2"
+                className="min-w-60 inline-flex items-center justify-center rounded-full border-2 border-slate-200 bg-white px-8 py-3 text-xs font-black uppercase tracking-[0.22em] text-slate-700 transition-all duration-200 hover:border-accent-primary hover:text-accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2"
               >
                 View Guidelines
               </button>
+
               {/* <a
-                onClick={() => onNavigate("")}
-                className="inline-flex items-center justify-center cursor-pointer rounded-full border-2 border-slate-200 bg-white px-8 py-3 text-xs font-black uppercase tracking-[0.22em] text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-accent-primary hover:text-accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2"
-              >
-                View Brochure
-              </a> */}
-              <a
-                href="https://raw.githubusercontent.com/VasudevBarjadiya/sci-pi-assets/main/Event_Poster.pdf"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border-2 border-slate-200 bg-white px-8 py-3 text-xs font-black uppercase tracking-[0.22em] text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-accent-primary hover:text-accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2"
+                className="min-w-60 inline-flex items-center justify-center rounded-full border-2 border-slate-200 bg-white px-8 py-3 text-xs font-black uppercase tracking-[0.22em] text-slate-700 transition-all duration-200 hover:border-accent-primary hover:text-accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2"
               >
                 Download Brochure
-              </a>
+              </a> */}
             </div>
 
             {/* Theme + Highlights */}
