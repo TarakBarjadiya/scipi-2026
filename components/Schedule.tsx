@@ -24,15 +24,16 @@ const Schedule: React.FC = () => {
       time: "09:00 AM – 09:30 AM",
       activity: "Registration and Kit Distribution",
     },
-    { time: "09:30 AM – 10:30 AM", activity: "Inauguration of Symposium" },
+    { time: "09:30 AM – 10:00 AM", activity: "Inauguration of Symposium" },
+    { time: "10:00 PM – 10:45 PM", activity: "Keynote Session" },
     {
-      time: "10:30 AM – 01:00 PM",
+      time: "10:45 AM – 01:30 PM",
       activity: "Presentations & Drawing Competition",
     },
-    { time: "01:00 PM – 02:00 PM", activity: "Lunch Break" },
-    { time: "02:00 PM – 03:00 PM", activity: "Keynote Session" },
+    { time: "01:30 PM – 02:30 PM", activity: "Lunch Break" },
+    { time: "02:30 PM – 03:15 PM", activity: "Keynote Session" },
     {
-      time: "03:00 PM – 04:00 PM",
+      time: "03:15 PM – 04:30 PM",
       activity: "Prize Distribution & Valedictory",
     },
   ];

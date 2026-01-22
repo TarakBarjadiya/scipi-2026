@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { PageId } from "../types";
 
 interface HomeProps {
@@ -6,6 +6,8 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ onNavigate }) => {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className="relative overflow-hidden">
       <div className="mx-auto max-w-6xl px-4 md:px-8">
@@ -25,7 +27,7 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
             </div>
 
             {/* Year + Sci-π */}
-            <div className="flex flex-col items-start ">
+            <div className="flex flex-col items-start">
               <h2 className="blue-sci font-display text-2xl font-bold leading-tight text-slate-800 md:text-3xl">
                 Sci-
                 <span className="pi-font text-3xl lg:text-4xl">π</span> 2026
@@ -45,6 +47,7 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                   28 February, 2026
                 </p>
               </div>
+
               <div className="space-y-1 rounded-2xl border border-slate-200/60 bg-slate-50 p-4">
                 <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-slate-400">
                   Deadline (Abstract)
@@ -53,6 +56,7 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                   10 February, 2026
                 </p>
               </div>
+
               <div className="space-y-1 rounded-2xl border border-slate-200/60 bg-slate-50 p-4">
                 <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-slate-400">
                   Registration Ends
@@ -79,14 +83,21 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                 View Guidelines
               </button>
 
-              {/* <a
-                href="#"
+              <a
+                href="https://docs.google.com/viewerng/viewer?url=https://raw.githubusercontent.com/VasudevBarjadiya/sci-pi-assets/main/scipi_brochure.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="min-w-60 inline-flex items-center justify-center rounded-full border-2 border-slate-200 bg-white px-8 py-3 text-xs font-black uppercase tracking-[0.22em] text-slate-700 transition-all duration-200 hover:border-accent-primary hover:text-accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2"
               >
+                View Brochure
+              </a>
+
+              {/* <button
+                onClick={() => setOpen(true)}
+                className="min-w-60 inline-flex items-center justify-center rounded-full border-2 border-slate-200 bg-white px-8 py-3 text-xs font-black uppercase tracking-[0.22em] text-slate-700 transition-all duration-200 hover:border-accent-primary hover:text-accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2"
+              >
                 Download Brochure
-              </a> */}
+              </button> */}
             </div>
 
             {/* Theme + Highlights */}
@@ -99,13 +110,15 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                   Emerging Trends in Science &amp; Technology
                 </p>
               </div>
+
               <div className="rounded-2xl border border-blue-100 bg-blue-50 p-5">
                 <span className="mb-2 block text-xs font-black uppercase tracking-[0.22em] text-blue-600">
                   Highlights
                 </span>
                 <p className="text-sm font-bold leading-snug text-slate-800 md:text-base">
-                  Keynote Speaker <br /> Oral Presentations
-                  <br /> Poster Presentations <br />
+                  Keynote Speaker <br />
+                  Oral Presentations <br />
+                  Poster Presentations <br />
                   Drawing Competition
                 </p>
               </div>
@@ -114,18 +127,36 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
 
           {/* RIGHT: Poster */}
           <div className="relative">
-            <div className="pointer-events-none absolute -inset-4 transition-all duration-500 lg:group-hover:bg-accent-secondary/20" />
-            <div className="relative">
-              <img
-                src="home_poster.png"
-                alt="SCI-π Poster"
-                className="w-full max-w-[480px] shadow-xl shadow-[#b9dbfd] lg:ml-auto"
-                loading="lazy"
-              />
-            </div>
+            <img
+              src="home_poster.png"
+              alt="SCI-π Poster"
+              className="w-full max-w-[480px] shadow-xl shadow-[#b9dbfd] lg:ml-auto"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
+
+      {/* PDF MODAL */}
+      {/* {open && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+          <div className="relative w-[95vw] h-[95vh] max-w-6xl rounded-2xl bg-white overflow-hidden shadow-2xl">
+            <button
+              onClick={() => setOpen(false)}
+              className="absolute top-4 right-4 z-10 rounded-full bg-white px-3 py-1 font-bold text-slate-700 hover:text-accent-primary shadow"
+            >
+              ✕
+            </button>
+
+            <iframe
+              src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/VasudevBarjadiya/sci-pi-assets/main/scipi_brochure.pdf&embedded=true"
+              className="w-full h-full min-h-[80vh]"
+              style={{ border: "none" }}
+              title="Sci-Pi Brochure"
+            />
+          </div>
+        </div>
+      )} */}
     </section>
   );
 };

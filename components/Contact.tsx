@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
           </h3>
           <p className="text-slate-600 font-medium leading-relaxed text-justify">
             The symposium is organized by the{" "}
-            <strong>Department of Humanities and Sciences</strong> and the{' '}
+            <strong>Department of Humanities and Sciences</strong> and the{" "}
             <strong>Department of Microbiology</strong>, Darshan University,
             with support from faculty and staff members across both departments.
           </p>
@@ -44,13 +44,15 @@ const Contact: React.FC = () => {
           <h3 className="text-2xl font-black text-accent-primary">
             Contact Details
           </h3>
+
           <div className="space-y-4">
             {contacts.map((c, i) => (
               <div
                 key={i}
-                className="flex items-center justify-between p-4 bg-blue-50 rounded-2xl border border-blue-100"
+                className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between p-4 bg-blue-50 rounded-2xl border border-blue-100"
               >
                 <span className="font-bold text-slate-800">{c.name}</span>
+
                 <a
                   href={`tel:${c.phone}`}
                   className="text-accent-secondary font-black hover:underline"

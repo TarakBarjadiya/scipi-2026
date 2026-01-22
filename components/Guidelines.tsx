@@ -137,37 +137,47 @@ const Guidelines: React.FC = () => {
 
         {/* Poster */}
         <section className="bg-white rounded-3xl p-8 md:p-10 shadow-xl shadow-slate-200/60 border border-slate-100 space-y-8">
-          <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 pb-6">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-blue-50 text-accent-secondary flex items-center justify-center shrink-0">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
+          <div className="border-b border-slate-100 pb-6">
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-blue-50 text-accent-secondary flex items-center justify-center shrink-0">
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black text-accent-primary">
+                    Poster Guidelines
+                  </h3>
+                  <p className="text-xs font-semibold tracking-[0.2em] uppercase text-slate-400">
+                    Digital poster
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-2xl font-black text-accent-primary">
-                  Poster Guidelines
-                </h3>
-                <p className="text-xs font-semibold tracking-[0.2em] uppercase text-slate-400">
-                  Digital poster
-                </p>
+
+              <div className="text-sm text-right text-slate-500">
+                <span className="inline-flex items-center rounded-full bg-red-50 px-3 py-1 text-xs font-semibold text-red-600 border border-red-100">
+                  Deadline:
+                  <span className="ml-1 font-bold">20 February, 2026</span>
+                </span>
               </div>
             </div>
-            <div className="text-sm text-right text-slate-500">
-              <span className="inline-flex items-center rounded-full bg-red-50 px-3 py-1 text-xs font-semibold text-red-600 border border-red-100">
-                Deadline:
-                <span className="ml-1 font-bold">20 February, 2026</span>
-              </span>
+
+            {/* 🔹 MOVE INFO BOX HERE */}
+            <div className="lg:max-w-sm bg-slate-900/5 border-l-4 mt-4 border-accent-primary px-4 py-2">
+              <p className="text-sm font-semibold text-slate-700 leading-snug">
+                This competition is open only to UG Students and PG Students.
+              </p>
             </div>
           </div>
 
@@ -212,34 +222,46 @@ const Guidelines: React.FC = () => {
 
         {/* Drawing */}
         <section className="bg-white rounded-3xl p-8 md:p-10 shadow-xl shadow-slate-200/60 border border-slate-100 space-y-8">
-          <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 pb-6">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
-                  />
-                </svg>
+          <div className="border-b border-slate-100 pb-6">
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black text-accent-primary">
+                    Drawing Competition
+                  </h3>
+                  <p className="text-xs font-semibold tracking-[0.2em] uppercase text-slate-400">
+                    On-campus activity
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-2xl font-black text-accent-primary">
-                  Drawing Competition
-                </h3>
-                <p className="text-xs font-semibold tracking-[0.2em] uppercase text-slate-400">
-                  On-campus activity
-                </p>
+              <div className="text-sm text-right text-slate-500">
+                <span className="inline-flex items-center rounded-full bg-red-50 px-3 py-1 text-xs font-semibold text-red-600 border border-red-100">
+                  Deadline:
+                  <span className="ml-1 font-bold">20 February, 2026</span>
+                </span>
               </div>
             </div>
+              <div className="lg:max-w-sm bg-slate-900/5 border-l-4 mt-4 border-accent-primary px-4 py-2">
+                <p className="text-sm font-semibold text-slate-700 leading-snug">
+                  This competition is open only to UG Students and PG Students.
+                </p>
+              </div>
           </div>
-
           <div className="space-y-6">
             <ul className="space-y-3 text-slate-600 font-medium text-sm list-disc px-6">
               <li>
@@ -257,7 +279,6 @@ const Guidelines: React.FC = () => {
               </li>
             </ul>
           </div>
-
           <div className="p-4 rounded-2xl border border-amber-100 bg-amber-50 text-amber-900 text-xs md:text-sm font-medium">
             <ul className="list-disc pl-5 space-y-1">
               <li>
