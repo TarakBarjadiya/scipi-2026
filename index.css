@@ -1,24 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
-@import "tailwindcss";
-@tailwind utilities;
-
-.pi-font {
-  font-family: "PT Serif", serif;
-  color: #b1d135;
+.marquee {
+  overflow: hidden;
+  display: flex; /* Ensures items stay in a row */
 }
-.blue-sci {
-  color: #1a61ad !important;
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  /* Use 'linear' for consistent speed and 'infinite' */
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-item {
+  padding-inline: 2rem; /* Give it some breathing room */
+  font-weight: 900;
+  text-transform: uppercase;
+  white-space: nowrap; /* Prevent text from wrapping */
+  color: #166534;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    /* Translate by exactly 50% because we have two identical sets of content */
+    transform: translateX(-50%);
   }
-}
-
-.animate-marquee {
-  animation: marquee 12s linear infinite;
 }

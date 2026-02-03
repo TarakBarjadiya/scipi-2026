@@ -83,16 +83,23 @@ const Registration: React.FC<GuidelinesProps> = ({ onNavigate }) => {
         </div>
 
         {/* WhatsApp Community Marquee */}
-        <div className="w-full max-w-xl overflow-hidden rounded-full bg-green-50 border border-green-200 py-2">
-          <div className="whitespace-nowrap animate-marquee text-green-800 font-black uppercase tracking-wider text-sm">
-            <a
-              href="https://chat.whatsapp.com/K2JddZJjtVh9cie8KiYnEk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-            >
+        <div className="w-full max-w-xl overflow-hidden rounded-full bg-green-50 border border-green-200 py-2 marquee">
+          <div className="marquee-track">
+            {/* Set 1 */}
+            <span className="marquee-item">
               🚀 Join our WhatsApp community for updates 🚀
-            </a>
+            </span>
+            <span className="marquee-item">
+              🚀 Join our WhatsApp community for updates 🚀
+            </span>
+
+            {/* Set 2 (Identical Clone) */}
+            <span className="marquee-item">
+              🚀 Join our WhatsApp community for updates 🚀
+            </span>
+            <span className="marquee-item">
+              🚀 Join our WhatsApp community for updates 🚀
+            </span>
           </div>
         </div>
 
