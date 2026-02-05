@@ -181,22 +181,71 @@ const Guidelines: React.FC = () => {
             </div>
           </div>
 
-          <div className="space-y-6">
-            <ul className="space-y-3 px-6 text-slate-600 font-medium text-sm list-disc">
-              <li>
-                Posters must be digitally designed and printed on a single page
-                only.
-              </li>
-              <li>
-                Exact size: <strong>3 ft × 2 ft (width × height)</strong> —
-                strictly mandatory; any other dimension will not be accepted.
-              </li>
-              <li>
-                Posters may include images, tables, charts, and graphs to
-                support the research content.
-              </li>
-              <li>Posters must be presented in English.</li>
-            </ul>
+          {/* Container for List + Diagram */}
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
+            {/* Left Side: Guidelines List */}
+            <div className="flex-1 space-y-6">
+              <ul className="space-y-3 px-6 text-slate-600 font-medium text-sm list-disc">
+                <li>
+                  Posters must be digitally designed and printed on a single
+                  page only.
+                </li>
+                <li>
+                  Exact size: <strong>3 ft × 2 ft (width × height)</strong> —
+                  strictly mandatory; any other dimension will not be accepted.
+                </li>
+                <li>
+                  Posters may include images, tables, charts, and graphs to
+                  support the research content.
+                </li>
+                <li>Posters must be presented in English.</li>
+              </ul>
+            </div>
+
+            {/* Right Side: Dimension Diagram */}
+            <div className="flex justify-center w-full lg:w-auto shrink-0 pt-0 lg:pt-4">
+              <div className="w-40 lg:w-56 shrink-0">
+                <div className="relative aspect-[3/2] border-2 border-[#1a61ad] rounded-md bg-blue-50/50 flex items-center justify-center">
+                  {/* Width Label (Top) */}
+                  <div className="absolute -top-6 left-0 w-full flex items-center gap-1">
+                    <div className="h-[1px] bg-[#1a61ad]/30 flex-1"></div>
+                    <span className="text-[10px] font-bold text-[#1a61ad] whitespace-nowrap">
+                      3 ft.
+                    </span>
+                    <div className="h-[1px] bg-[#1a61ad]/30 flex-1"></div>
+                  </div>
+
+                  {/* Height Label (Left) */}
+                  <div className="absolute -left-8 top-0 h-full flex flex-col items-center gap-1">
+                    <div className="w-[1px] bg-[#1a61ad]/30 flex-1"></div>
+                    <span className="text-[10px] font-bold text-[#1a61ad] [writing-mode:vertical-lr] rotate-180">
+                      2 ft.
+                    </span>
+                    <div className="w-[1px] bg-[#1a61ad]/30 flex-1"></div>
+                  </div>
+
+                  {/* Interior Icon/Label */}
+                  <div className="flex flex-col items-center opacity-30">
+                    <svg
+                      className="w-6 h-6 text-[#1a61ad]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      />
+                    </svg>
+                    <span className="text-[8px] font-black text-[#1a61ad] uppercase mt-1">
+                      Landscape
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="p-4 rounded-2xl border border-amber-100 bg-amber-50 text-amber-900 text-xs md:text-sm font-medium">
@@ -256,11 +305,11 @@ const Guidelines: React.FC = () => {
                 </span>
               </div>
             </div>
-              <div className="lg:max-w-sm bg-slate-900/5 border-l-4 mt-4 border-accent-primary px-4 py-2">
-                <p className="text-sm font-semibold text-slate-700 leading-snug">
-                  This competition is open only to UG Students and PG Students.
-                </p>
-              </div>
+            <div className="lg:max-w-sm bg-slate-900/5 border-l-4 mt-4 border-accent-primary px-4 py-2">
+              <p className="text-sm font-semibold text-slate-700 leading-snug">
+                This competition is open only to UG Students and PG Students.
+              </p>
+            </div>
           </div>
           <div className="space-y-6">
             <ul className="space-y-3 text-slate-600 font-medium text-sm list-disc px-6">
